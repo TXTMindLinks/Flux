@@ -1,0 +1,71 @@
+
+<ion-header >
+
+  <ion-navbar>
+    <ion-title>Mendoza's Shoes <img (click)="goHome()" class = "home" src= "assets/icon/home.jpg" height= "30px"></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+
+<img class = "mendoza" src= "assets/icon/mendoza.jpg" >
+
+
+<div class= "card">
+  <p id = "women">We have a variety of boots and shoes that women can chose from.</p>
+  
+  </div>
+<div class = "hours">
+  <img class = "clock" src = "assets/icon/clock.jpg" height = "23px" > <img (click)="showTimes()" class = "drop" src = "assets/icon/drop.jpg" height= "15px" >
+
+
+<table> 
+   <tr>
+    <td>Saturday</td>
+    <td>11AM-6PM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td>Sunday</td>
+    <td>7AM-5PM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td>Monday</td>
+    <td>Closed</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td>Tuesday</td>
+    <td>7AM-5PM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td>Wednesday</td>
+    <td>Closed</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td>Thursday</td>
+    <td>Closed</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td>Friday</td>
+    <td>Closed</td>
+  </tr>
+</table>
+
+</div>
+
+
+<br>
+
+<div class = "location">
+<p id = "address"><img class = "marker" src = "assets/icon/marker.jpg" height = '35px'>7900 All America City Way, Paramount, CA 90023 </p>
+</div>
+
+
+<div class = "number">
+<p id = "cell"><img class = "phone" src = "assets/icon/phone.jpg" height = '35px'>(310) 749-7118</p>
+</div>
+
+<button ion-button block (click) = "goToMaps()" class="directions">Go To Stand</button>
+</ion-content>

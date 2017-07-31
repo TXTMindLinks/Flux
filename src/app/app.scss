@@ -1,0 +1,136 @@
+// http://ionicframework.com/docs/theming/
+
+.flux{
+    font-family: "Fira Sans";
+    font-weight: 800;
+    color:white;
+    font-size: 52pt;
+    z-index: -10;
+
+
+    
+}
+.product{
+    font: Fira Sans;
+    position: absolute;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 17pt;
+    text-align: center;
+    right: 70px;
+}
+.goToStands{
+    font: Fira Sans;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    background-color: white;
+}
+.musicicon{
+    font: Fira Sans;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    background-color: white;
+}
+.shirticon{
+    font: Fira Sans;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    background-color: white;
+}
+.shoeicon{
+    font: Fira Sans;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    background-color: white;
+}
+.forkicon{
+    font: Fira Sans;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    background-color: white;
+}
+.featuresicon{
+    font: Fira Sans;
+    font-size: 28px;
+    font-weight: bold;
+    height: 80px;
+    background-color: white;
+}
+.fork{
+    position: absolute;
+    left: 34px;
+}
+.shirt{
+    position: absolute;
+    left: 20px;
+}
+.shoe{
+    position: absolute;
+    left: 28px;
+}
+
+.tablet{
+    position: absolute;
+    left: 28px;
+}
+.music{
+    
+    position: absolute;
+    left: 28px;
+
+}
+.features{
+    position: absolute;
+    left: 28px;
+}
+.polygon{
+    position: absolute;
+    right: 8px;
+
+}
+.back{
+    position: absolute;
+    right: 8px;
+}
+.clock{
+    position: absolute;
+    left: 30px;
+    margin-top: 4px;
+}
+
+.marker{
+      position: absolute;
+    left: 30px;
+    margin-top: 4px;
+}
+
+.phone{
+       position: absolute;
+    left: 30px;
+    margin-top: -11px;
+
+}
+
+.button-block-ios{
+   background-color: #FE5A59; 
+
+}
+.drop{
+     position: absolute;
+     margin-top: 7px; 
+    right: 30px;
+}
+.home{
+    position: absolute;
+    margin-top: -3px;
+    right: 14px;
+}
+.toolbar-title-ios{
+    font-weight: 800;
+}
+

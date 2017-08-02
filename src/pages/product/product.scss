@@ -82,8 +82,8 @@ margin-top: 1px;
 border-bottom: solid 1px #999999; 
 padding-bottom: 8px;
 // margin-left: 1px;
-// padding-right: 14px;
-padding-left: 3px;
+padding-right: 16px;
+padding-left: 20px;
 }
 #address{
     margin-left: 61px;
@@ -167,7 +167,7 @@ margin-top: -4px;
 }
 .button-ios{
         font-family: "fira sans";
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         font-weight: bold;
 
 }
@@ -182,4 +182,7 @@ table{
     width: 86%;
     
 }
-
+.mapslocator{
+    position: absolute;
+    margin-left: 25%;
+}

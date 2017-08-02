@@ -7,20 +7,21 @@ import { Geolocation } from '@ionic-native/geolocation';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { MapsPage } from '../pages/maps/maps';
+import { MercaditoPage } from '../pages/mercadito/mercadito';
 import { OptionsPage } from '../pages/options/options';
 import { ProductPage } from '../pages/product/product';
 import { StandsPage } from '../pages/stands/stands';
-
+import { FeaturesPage } from '../pages/features/features'
 import { GoogleMaps } from '@ionic-native/google-maps';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    MapsPage,
+    MercaditoPage,
     OptionsPage,
     ProductPage,
-    StandsPage
+    StandsPage,
+    FeaturesPage
   ],
   imports: [
     BrowserModule,
@@ -30,10 +31,11 @@ import { GoogleMaps } from '@ionic-native/google-maps';
   entryComponents: [
     MyApp,
     HomePage,
-    MapsPage,
+    MercaditoPage,
     OptionsPage,
     ProductPage,
-    StandsPage
+    StandsPage,
+    FeaturesPage
   ],
   providers: [
     GoogleMaps,

@@ -100,7 +100,7 @@
 .clock{
     position: absolute;
     left: 30px;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .marker{
@@ -108,10 +108,14 @@
     left: 30px;
     margin-top: 4px;
 }
-
+.mark{
+    position: absolute;
+    left: 32px;
+    margin-top: 4px;
+}
 .phone{
        position: absolute;
-    left: 30px;
+    left: 31px;
     margin-top: -11px;
 
 }
@@ -125,6 +129,11 @@
      margin-top: 7px; 
     right: 30px;
 }
+.droper{
+     position: absolute;
+     margin-top: 8px; 
+    right: 30px;
+}
 .home{
     position: absolute;
     margin-top: -3px;
@@ -133,4 +142,6 @@
 .toolbar-title-ios{
     font-weight: 800;
 }
-
+.directions{
+    font-size: 1.9rem;
+}

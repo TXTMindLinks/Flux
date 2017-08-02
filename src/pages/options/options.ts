@@ -3,7 +3,6 @@ import { NavController} from 'ionic-angular';
 import { StandsPage } from '../stands/stands'
 
 
-
 @Component({
   selector: 'page-options',
   templateUrl: 'options.html',
@@ -24,6 +23,8 @@ export class OptionsPage {
   goToStands(){
     this.navCtrl.push(StandsPage)
   }
+
+  
 
 
 }

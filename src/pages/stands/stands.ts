@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { MapsPage } from '../maps/maps'
 import { ProductPage } from '../product/product'
 import { OptionsPage } from '../options/options'
 
@@ -17,10 +16,6 @@ export class StandsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StandsPage');
-  }
-  goToMaps(){
-     this.navCtrl.push(MapsPage);
-
   }
   goToStands(){
     this.navCtrl.push(ProductPage);

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Platform } from 'ionic-angular';//sdsdsdsdsdsd
-import { HomePage } from '../home/home';
+import { OptionsPage } from '../options/options'
 import {
  GoogleMaps,
  GoogleMap,
@@ -9,81 +9,53 @@ import {
  LatLng,
  CameraPosition,
  MarkerOptions,
- Marker
 } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation';
 import { AlertController } from 'ionic-angular';
 
 /**
- * Generated class for the MapsPage page.
+ * Generated class for the FeaturesPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-maps',
-  templateUrl: 'maps.html',
+  selector: 'page-features',
+  templateUrl: 'features.html',
 })
-export class MapsPage {
+export class FeaturesPage {
+
   lat;
   long;
+  display; 
   constructor(private alertCtrl: AlertController,public navCtrl: NavController, public navParams: NavParams,public googleMaps:GoogleMaps,public platform: Platform,public geolocation: Geolocation) {
+    this.display = false;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MapsPage');
-    this.loadMap();
+    console.log('ionViewDidLoad FeaturesPage');
   }
-  goBackHome(){
-    this.navCtrl.push(HomePage)
+  showTimes(){
+      if (this.display == true){
+        this.display = false;
+      }else{
+        this.display=true;
+      }
+  }
+      goHome(){
+          this.navCtrl.push(OptionsPage);
   }
 
-  loadMap() {
-  console.log("loading map");
- // make sure to create following structure in your view.html file
- // and add a height (for example 100%) to it, else the map won't be visible
- // <ion-content>
- //  <div #map id="map" style="height:100%;"></div>
- // </ion-content>
+    openMaps(){
 
- // create a new map by passing HTMLElement
- let element: HTMLElement = document.getElementById('map');
- // create LatLng object
- let pos: LatLng = new LatLng(33.900009, -118.162237);
- this.lat = 33.900009;
- this.long = -118.162237;
- let map: GoogleMap = this.googleMaps.create(element,{
-    camera:{
-      'target': pos,
-      'zoom':18
-    }
- });
-
- // listen to MAP_READY event
- // You must wait for this event to fire before adding something to the map or modifying it in anyway
- map.one(GoogleMapsEvent.MAP_READY).then(
-   () => {
-     console.log('Map is ready!');
-     // Now you can add elements to the map like the marker
-      // create new marker
-      let markerOptions: MarkerOptions = {
-        position: pos,
-        title: 'Ionic'
-      };
-
-      map.addMarker(markerOptions).then((marker: Marker) => {
-          marker.showInfoWindow();
-          console.log("marker")
-           marker.addEventListener(GoogleMapsEvent.MARKER_CLICK).subscribe(() => { console.log('Marker clicked...'); });
-        });
-        }
- );
-
-}
-openMaps(){
     console.log("opening in maps")
-    
+      
+      let pos: LatLng = new LatLng(34.037048, -118.193832);
+      this.lat = 34.037048;
+      this.long = -118.193832;
+
+
       this.geolocation.getCurrentPosition().then((position) => {
         // ios
         if (this.platform.is('ios')) {
@@ -106,7 +78,4 @@ openMaps(){
 
 
 }
-
-
-  
 }

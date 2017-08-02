@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { OptionsPage } from '../options/options'
+import { OptionsPage } from '../options/options';
+import { MercaditoPage } from '../mercadito/mercadito';
 
 @Component({
   selector: 'page-home',
@@ -16,7 +17,7 @@ export class HomePage {
     this.items = [
       'Alameda Swap Meet',
       'Bonitos Swap Meet',
-      'Mini Swap Meet',
+      'El Mercado de Los Angeles',
       'Paramount Swap Meet',
       'Westlake Swap Meet',
     
@@ -44,8 +45,13 @@ export class HomePage {
     }
   }
   
-  goToOptions() {
-    this.navCtrl.push(OptionsPage);
+  goToOptions(item) {
+    if (item === "El Mercado de Los Angeles"){
+      this.navCtrl.push(MercaditoPage);
+    }else{
+      this.navCtrl.push(OptionsPage);
+    }
+    // this.navCtrl.push(OptionsPage);
   }
 }
 

@@ -1,0 +1,77 @@
+
+<ion-header >
+
+  <ion-navbar>
+    <ion-title>Features <img (click)="goHome()" class = "home" src= "assets/icon/Home.jpg" height= "30px"></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+
+<img class = "mendoza" src= "assets/icon/mercadito.jpg" >
+
+
+<div class= "card">
+  <p id = "women">Known for its vast variety of Mexican foods, ranging anywhere from toasted grasshoppers to fried pork belly, etc. </p>
+  
+  </div>
+<div class = "hours">
+  <img class = "clock" src = "assets/icon/clock.jpg" height = "23px" > <img (click)="showTimes()" class = "droper" src = "assets/icon/drop.jpg" height= "15px" >
+
+
+<table class = "times"> 
+   <tr>
+    <td id = "days">Saturday</td>
+    <td id = "days">9AM-1:30AM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td id = "days">Sunday</td>
+    <td id = "days">9AM-1AM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td id = "days">Monday</td>
+    <td id = "days">10AM-11PM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td id = "days">Tuesday</td>
+    <td id = "days">10AM-11PM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td id = "days">Wednesday</td>
+    <td id = "days">10AM-11PM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td id = "days">Thursday</td>
+    <td id = "days">10AM-1AM</td>
+  </tr>
+  <tr *ngIf = "display">
+    <td id = "days">Friday</td>
+    <td id = "days">10AM-1:30AM</td>
+  </tr>
+</table>
+
+</div>
+
+
+<br>
+
+<div class = "location">
+<p id = "mercadito"><img class = "mark" src = "assets/icon/marker.jpg" height = '35px'>3425 E 1st St, Los Angeles, CA 90063</p>
+</div>
+
+
+<div class = "number">
+<p id = "cell"><img class = "phone" src = "assets/icon/phone.jpg" height = '35px'>(323) 262-4507</p>
+</div>
+
+<button ion-button block class ="directions" (click) = "openMaps()" class="mapslocator">Directions</button>
+
+
+
+
+
+
+</ion-content>
